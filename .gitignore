@@ -1,0 +1,14 @@
+node_modules
+.cache/
+dist/
+.env
+.vscode/chrome/
+.DS_Store
+coverage/
+/.vs
+/-node_modules
+**/bin/**
+**/obj/**
+**/*.user
+**/dist/**
+**/tsout/**

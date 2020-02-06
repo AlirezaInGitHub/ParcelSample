@@ -1,0 +1,7 @@
+**/.gitignore
+**/.cache/
+**/.vscode/
+**/.env
+**/.DS_Store/
+**/node_modules/
+**/dist/

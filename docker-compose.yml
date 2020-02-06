@@ -1,0 +1,20 @@
+version: "3.7"
+
+services: 
+    webapp-frontend-dev:
+        container_name: webapp-frontend-dev
+        working_dir: /home/parcelsample/ParcelSample.WebApp/ClientApp/
+        build: 
+            dockerfile: DockerFile
+            context: .
+        volumes:
+            - ./:/home/parcelsample
+            - /home/parcelsample/ParcelSample.WebApp/ClientApp/node_modules/
+        ports: 
+            # Needed for app
+            - "4321:4321"
+            # Needed for hmr
+            - "1235:1235"
+        environment:
+            - NODE_PATH=/home/parcelsample/ParcelSample.WebApp/ClientApp/node_modules/
+
